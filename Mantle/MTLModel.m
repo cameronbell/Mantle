@@ -16,7 +16,7 @@
 // This coupling is needed for backwards compatibility in MTLModel's deprecated
 // methods.
 #import "MTLJSONAdapter.h"
-#import "MTLModel+NSCoding.h"
+//#import "MTLModel+NSCoding.h"
 
 // Used to cache the reflection performed in +propertyKeys.
 static void *MTLModelCachedPropertyKeysKey = &MTLModelCachedPropertyKeysKey;
@@ -240,6 +240,17 @@ static BOOL MTLValidateAndSetValue(id obj, NSString *key, id value, BOOL forceUp
 	}
 
 	return YES;
+}
+
+-(void)encodeWithCoder:(NSCoder *)aCoder {
+	[super encodeWithCoder:aCoder];
+}
+
+-(id)initWithCoder:(NSCoder *)aDecoder {
+	if (self = [super init]) {
+		
+	}
+	return self;
 }
 
 @end

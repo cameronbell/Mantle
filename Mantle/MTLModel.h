@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mantle/MTLVersionedObject.h>
 
 // An abstract base class for model objects, using reflection to provide
 // sensible default behaviors.
 //
 // The default implementations of <NSCopying>, -hash, and -isEqual: make use of
 // the +propertyKeys method.
-@interface MTLModel : NSObject <NSCopying>
+@interface MTLModel : MTLVersionedObject <NSCopying,NSCoding>
 
 // Returns a new instance of the receiver initialized using
 // -initWithDictionary:error:.
