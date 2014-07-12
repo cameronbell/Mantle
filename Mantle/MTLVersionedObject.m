@@ -20,7 +20,7 @@
 
 - (id)initWithCoder:(NSCoder *)decoder {
     if (self = [super init]) {
-        
+        //NSLog(@"VERSION: %@ - %@",[decoder decodeObjectForKey:@"_version"],NSStringFromClass([self class]));
     }
     return self;
 }

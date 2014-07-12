@@ -247,7 +247,7 @@ static BOOL MTLValidateAndSetValue(id obj, NSString *key, id value, BOOL forceUp
 }
 
 -(id)initWithCoder:(NSCoder *)aDecoder {
-	if (self = [super init]) {
+	if (self = [super initWithCoder:aDecoder]) {
 		
 	}
 	return self;
