@@ -10,4 +10,6 @@
 
 @interface MTLVersionedObject : NSObject <NSCoding>
 
+-(NSString *)version;
+
 @end
