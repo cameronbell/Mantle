@@ -11,5 +11,6 @@
 @interface MTLVersionedObject : NSObject <NSCoding>
 
 -(NSString *)version;
+-(void)setVersion:(NSString *)version;
 
 @end

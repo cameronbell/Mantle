@@ -41,4 +41,8 @@
 -(NSString *)version {
 	return _version;
 }
+
+-(void)setVersion:(NSString *)version {
+	_version = version;
+}
 @end
