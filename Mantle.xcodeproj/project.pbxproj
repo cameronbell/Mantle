@@ -670,7 +670,7 @@
 			name = "Mantle-iOS Tests";
 			productName = MaverickTests;
 			productReference = D042FC8715F72BC7004E8054 /* Mantle-iOS Tests.xctest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D0A56B451804B04900A84EDC /* Mantle-Mac */ = {
 			isa = PBXNativeTarget;
